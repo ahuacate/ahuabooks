@@ -14,7 +14,7 @@ Other Prerequisites are:
 
 Tasks to be performed are:
 - [ ] 1.0 Setup LazyLibrarian interface settings
-- [ ] 2.0 Jellyfin Common Settings
+- [ ] 2.0 Setup LazyLibrarian importing settings
 - [ ] 3.0 Add media to the Jellyfin Library
 - [ ] 4.0 Edit Jellyfin `Storm` User
 - [ ] 5.0 Create Jellyfin Remote Access Users
@@ -55,3 +55,47 @@ Next click `Request OAuth1` and you will directed to the GoodReads website to al
 | Goodreads Sync Interval | `48` Hours
 
 Remember to click `Save changes`.
+
+## 3.0 Setup LazyLibrarian downloader settings
+In your web browser type `http://192.168.50.118:5289` and click on the `Downloaders Tab`.
+
+### 3.1 Usenet Settings
+You should have NZBGet configured and its LXC running at http://192.168.30.112:6789/ . You will need your NZBGet `RestrictedUsername` and `RestrictedPassword` you configured [HERE](http://192.168.30.112:6789/#SECURITY). 
+
+Set the values as follows, remembering to click `Save changes` when finished:
+| Usenet| Value
+| :---  | :--- 
+| Use Sabnzbd+ | `☐`
+| Use NZBGet | `☑`
+| **NZBGET**
+| NZBGet Host | `192.168.30.112`
+| Port | 6789
+| Username | Type your NZBGet RestrictedUsername (i.e `client`)
+| Password | Type your NZBGet RestrictedPassword
+| Category | `lazy`
+| Priority | `0`
+| Usenet Retention | `1500` Days
+
+Remember to click `Save changes`.
+
+
+### 3.2 Torrent Settings
+You should have Deluge configured and its LXC running at http://192.168.30.113:8112/ . You will need your Deluge  `RestrictedUsername` and `RestrictedPassword` you configured [HERE](http://192.168.30.112:6789/#SECURITY). 
+
+Set the values as follows, remembering to click `Save changes` when finished:
+| Torrent| Value
+| :---  | :--- 
+| Use Deluge | `☑`
+| **Deluge**
+| Deluge Host | `192.168.30.113`
+| Daemon or webUI Port | `58846`
+| Deluge Certificate | Leave blank
+| Deluge URL Base | Leave blank
+| Username | localclient
+| Password | See instructions above
+| Deluge Label | `lazy`
+| Download directory | Leave blank
+
+Remember to click `Save changes`.
+
+
