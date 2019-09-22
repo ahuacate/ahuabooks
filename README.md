@@ -84,6 +84,7 @@ Remember to click `Save changes`.
 You should have Deluge configured and its LXC running at http://192.168.30.113:8112/ .
 
 Set the values as follows, remembering to click `Save changes` when finished:
+
 | Torrent| Value
 | :---  | :--- 
 | Use Deluge | `☑`
