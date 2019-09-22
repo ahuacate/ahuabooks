@@ -60,7 +60,7 @@ Remember to click `Save changes`.
 In your web browser type `http://192.168.50.118:5289` and click on the `Downloaders Tab`.
 
 ### 3.1 Usenet Settings
-You should have NZBGet configured and its LXC running at http://192.168.30.112:6789/ . You will need your NZBGet `RestrictedUsername` and `RestrictedPassword` you configured [HERE](http://192.168.30.112:6789/#SECURITY). 
+You should have NZBGet configured and its LXC running at http://192.168.30.112:6789/ . You will need your NZBGet `RestrictedUsername` (which is `client`) and `RestrictedPassword` you configured [HERE](https://github.com/ahuacate/nzbget/blob/master/README.md#200-nzbget-security-preferences). 
 
 Set the values as follows, remembering to click `Save changes` when finished:
 
@@ -71,7 +71,7 @@ Set the values as follows, remembering to click `Save changes` when finished:
 | **NZBGET**
 | NZBGet Host | `192.168.30.112`
 | Port | 6789
-| Username | Type your NZBGet RestrictedUsername (i.e `client`)
+| Username | `client`
 | Password | Type your NZBGet RestrictedPassword
 | Category | `lazy`
 | Priority | `0`
@@ -81,7 +81,7 @@ Remember to click `Save changes`.
 
 
 ### 3.2 Torrent Settings
-You should have Deluge configured and its LXC running at http://192.168.30.113:8112/ . You will need your Deluge  `RestrictedUsername` and `RestrictedPassword` you configured [HERE](http://192.168.30.112:6789/#SECURITY). 
+You should have Deluge configured and its LXC running at http://192.168.30.113:8112/ .
 
 Set the values as follows, remembering to click `Save changes` when finished:
 | Torrent| Value
@@ -92,8 +92,8 @@ Set the values as follows, remembering to click `Save changes` when finished:
 | Daemon or webUI Port | `58846`
 | Deluge Certificate | Leave blank
 | Deluge URL Base | Leave blank
-| Username | localclient
-| Password | See instructions above
+| Username | `lazylibrarian`
+| Password | `9c67cf728b8c079c2e0065ee11cb3a9a6771421a`
 | Deluge Label | `lazy`
 | Download directory | Leave blank
 
