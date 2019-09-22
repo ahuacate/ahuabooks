@@ -63,6 +63,7 @@ In your web browser type `http://192.168.50.118:5289` and click on the `Download
 You should have NZBGet configured and its LXC running at http://192.168.30.112:6789/ . You will need your NZBGet `RestrictedUsername` and `RestrictedPassword` you configured [HERE](http://192.168.30.112:6789/#SECURITY). 
 
 Set the values as follows, remembering to click `Save changes` when finished:
+
 | Usenet| Value
 | :---  | :--- 
 | Use Sabnzbd+ | `☐`
