@@ -29,6 +29,8 @@ In your web browser type `http://192.168.50.118:5289` and click on the `Interfac
 | User | `storm`
 | Pass | `add your chosen password`
 
+![alt text](https://raw.githubusercontent.com/ahuacate/lazylibrarian/master/images/interface.png)
+
 
 ## 2.00 Setup LazyLibrarian importing settings
 In your web browser type `http://192.168.50.118:5289` and click on the `Importing Tab`.
