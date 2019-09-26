@@ -13,12 +13,13 @@ Other Prerequisites are:
 - [x] LazyLibrarian LXC with LazyLibrarian SW installed as per [LazyLibrarian LXC - Ubuntu 18.04](https://github.com/ahuacate/proxmox-lxc/blob/master/README.md#110-lazylibrarian-lxc---ubuntu-1804).
 
 Tasks to be performed are:
-- [ ] 1.0 Setup LazyLibrarian interface settings
-- [ ] 2.0 Setup LazyLibrarian importing settings
-- [ ] 3.0 Add media to the Jellyfin Library
-- [ ] 4.0 Edit Jellyfin `Storm` User
-- [ ] 5.0 Create Jellyfin Remote Access Users
-- [ ] 6.0 Create Jellyfin Media Player Users
+- [ ] 1.00 Setup LazyLibrarian settings
+- [ ] 1.01 Setup LazyLibrarian interface settings
+- [ ] 1.02 Setup LazyLibrarian importing settings
+- [ ] 1.03 Setup LazyLibrarian downloader settings
+- [ ] 1.04 Setup LazyLibrarian providers settings
+- [ ] 1.05 Setup LazyLibrarian processing settings
+- [ ] 1.06 Setup LazyLibrarian categories settings
 - [ ] 00.00 Patches & Fixes
 
 ## 1.00 Setup LazyLibrarian settings
@@ -116,7 +117,7 @@ Click on the `Providers Tab`. Complete the settings as follows. Most important a
 ![alt text](https://raw.githubusercontent.com/ahuacate/lazylibrarian/master/images/providers.png)
 
 ### 1.05 Setup LazyLibrarian processing settings
-Click on the `Processing Tab`. Only input required in the Folders > Download Directories setting. Complete the settings as follows.
+Click on the `Processing Tab`. Only input required is the `Folders > Download Directories` setting. Complete the settings as follows.
 
 | Processing| Value
 | :---  | :--- 
@@ -131,3 +132,7 @@ Click on the `Categories Tab`. Complete the settings as follows.
 
 ![alt text](https://raw.githubusercontent.com/ahuacate/lazylibrarian/master/images/categories.png)
 
+---
+
+## 00.00 Patches & Fixes
+Nothing yet.
