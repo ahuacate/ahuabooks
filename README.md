@@ -21,7 +21,7 @@ Tasks to be performed are:
 - [ ] 6.0 Create Jellyfin Media Player Users
 - [ ] 00.00 Patches & Fixes
 
-## 1.0 Setup LazyLibrarian interface settings
+## 1.00 Setup LazyLibrarian interface settings
 In your web browser type `http://192.168.50.118:5289` and click on the `Interface Tab`. There is little to do here except add a new user and password to the `Access Control` section. Enter your Username and Password details as folows:
 
 | WebServer Options | Value
@@ -30,7 +30,7 @@ In your web browser type `http://192.168.50.118:5289` and click on the `Interfac
 | Pass | `add your chosen password`
 
 
-## 2.0 Setup LazyLibrarian importing settings
+## 2.00 Setup LazyLibrarian importing settings
 In your web browser type `http://192.168.50.118:5289` and click on the `Importing Tab`.
 
 This tab is used to import your saved books from either GoodReads or GoogleBooks. Personally I prefer GoodReads so these instructions are for Goodreads.
@@ -56,10 +56,10 @@ Next click `Request OAuth1` and you will directed to the GoodReads website to al
 
 Remember to click `Save changes`.
 
-## 3.0 Setup LazyLibrarian downloader settings
+## 3.00 Setup LazyLibrarian downloader settings
 In your web browser type `http://192.168.50.118:5289` and click on the `Downloaders Tab`.
 
-### 3.1 Usenet Settings
+### 3.01 Usenet Settings
 You should have NZBGet configured and its LXC running at http://192.168.30.112:6789/ . You will need your NZBGet `RestrictedUsername` (which is `client`) and `RestrictedPassword` you configured [HERE](https://github.com/ahuacate/nzbget/blob/master/README.md#200-nzbget-security-preferences). 
 
 Set the values as follows, remembering to click `Save changes` when finished:
@@ -80,7 +80,7 @@ Set the values as follows, remembering to click `Save changes` when finished:
 Remember to click `Save changes`.
 
 
-### 3.2 Torrent Settings
+### 3.02 Torrent Settings
 You should have Deluge configured and its LXC running at http://192.168.30.113:8112/ .
 
 Set the values as follows, remembering to click `Save changes` when finished:
