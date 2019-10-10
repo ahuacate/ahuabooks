@@ -135,6 +135,28 @@ Click on the `Categories Tab`. Complete the settings as follows.
 
 ![alt text](https://raw.githubusercontent.com/ahuacate/lazylibrarian/master/images/categories.png)
 
+## 2.00 Create Lazylibrarian backup
+With the Proxmox web interface go to `typhoon-01` > `118 (lazy)` > `>_ Shell` and type the following:
+```
+sudo systemctl stop lazy.service &&
+sleep 5 &&
+cp /opt/LazyLibrarian/lazylibrarian.ini* /mnt/backup/lazylibrarian &&
+cp /opt/LazyLibrarian/.lazylibrarian/{lazylibrarian.db,magazines.csv} /mnt/backup/lazylibrarian &&
+sudo systemctl restart lazy.service
+```
+
+## 3.03 Restore Lazylibrarian backup
+With the Proxmox web interface go to `typhoon-01` > `118 (lazy)` > `>_ Shell` and type the following:
+```
+sudo systemctl stop lazy.service &&
+sleep 5 &&
+rm -rf /opt/LazyLibrarian/lazylibrarian.ini* || true &&
+cp /mnt/backup/lazylibrarian/lazylibrarian.ini* /opt/LazyLibrarian &&
+cp /mnt/backup/lazylibrarian/{lazylibrarian.db,magazines.csv} //opt/LazyLibrarian/.lazylibrarian &&
+chown 1105:100 /opt/LazyLibrarian/lazylibrarian.ini* &&
+sudo systemctl restart lazy.service
+```
+
 ---
 
 ## 00.00 Patches & Fixes
