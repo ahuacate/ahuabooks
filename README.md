@@ -23,6 +23,8 @@ Tasks to be performed are:
 - [ ] 1.04 Setup LazyLibrarian providers settings
 - [ ] 1.05 Setup LazyLibrarian processing settings
 - [ ] 1.06 Setup LazyLibrarian categories settings
+- [ ] 2.00 Create Lazylibrarian backup
+- [ ] 3.00 Restore Lazylibrarian backup
 - [ ] 00.00 Patches & Fixes
 
 ## 1.00 Setup LazyLibrarian settings
@@ -145,7 +147,7 @@ cp /opt/LazyLibrarian/.lazylibrarian/{lazylibrarian.db,magazines.csv} /mnt/backu
 sudo systemctl restart lazy.service
 ```
 
-## 3.03 Restore Lazylibrarian backup
+## 3.00 Restore Lazylibrarian backup
 With the Proxmox web interface go to `typhoon-01` > `118 (lazy)` > `>_ Shell` and type the following:
 ```
 sudo systemctl stop lazy.service &&
