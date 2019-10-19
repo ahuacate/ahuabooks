@@ -154,8 +154,8 @@ sudo systemctl stop lazy.service &&
 sleep 5 &&
 rm -rf /opt/LazyLibrarian/lazylibrarian.ini* || true &&
 cp /mnt/backup/lazylibrarian/lazylibrarian.ini* /opt/LazyLibrarian &&
-cp /mnt/backup/lazylibrarian/{lazylibrarian.db,magazines.csv} //opt/LazyLibrarian/.lazylibrarian &&
-chown 1105:100 /opt/LazyLibrarian/lazylibrarian.ini* &&
+cp /mnt/backup/lazylibrarian/{lazylibrarian.db,magazines.csv} /opt/LazyLibrarian/.lazylibrarian &&
+chown 1605:65605 /opt/LazyLibrarian/lazylibrarian.ini* &&
 sudo systemctl restart lazy.service
 ```
 
