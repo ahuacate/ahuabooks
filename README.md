@@ -159,6 +159,9 @@ chown 1605:65605 /opt/LazyLibrarian/lazylibrarian.ini* &&
 sudo systemctl restart lazy.service
 ```
 
+## 4.00 Create an account at private trackers
+Best create a account at a specialist indexer like audiobookbay.nl. Then add audiobookbay to Jackett. 
+
 ---
 
 ## 00.00 Patches & Fixes
