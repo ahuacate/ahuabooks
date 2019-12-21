@@ -142,8 +142,8 @@ With the Proxmox web interface go to `typhoon-01` > `118 (lazy)` > `>_ Shell` an
 ```
 sudo systemctl stop lazy.service &&
 sleep 5 &&
-cp /opt/LazyLibrarian/lazylibrarian.ini* /mnt/backup/lazylibrarian &&
-cp /opt/LazyLibrarian/.lazylibrarian/{lazylibrarian.db,magazines.csv} /mnt/backup/lazylibrarian &&
+su -c 'cp /opt/LazyLibrarian/lazylibrarian.ini* /mnt/backup/lazylibrarian' media &&
+su -c 'cp /opt/LazyLibrarian/.lazylibrarian/{lazylibrarian.db,magazines.csv} /mnt/backup/lazylibrarian' media &&
 sudo systemctl restart lazy.service
 ```
 
@@ -153,14 +153,14 @@ With the Proxmox web interface go to `typhoon-01` > `118 (lazy)` > `>_ Shell` an
 sudo systemctl stop lazy.service &&
 sleep 5 &&
 rm -rf /opt/LazyLibrarian/lazylibrarian.ini* || true &&
-cp /mnt/backup/lazylibrarian/lazylibrarian.ini* /opt/LazyLibrarian &&
-cp /mnt/backup/lazylibrarian/{lazylibrarian.db,magazines.csv} /opt/LazyLibrarian/.lazylibrarian &&
+su -c 'cp /mnt/backup/lazylibrarian/lazylibrarian.ini* /opt/LazyLibrarian' media &&
+su -c 'cp /mnt/backup/lazylibrarian/{lazylibrarian.db,magazines.csv} /opt/LazyLibrarian/.lazylibrarian' media &&
 chown 1605:65605 /opt/LazyLibrarian/lazylibrarian.ini* &&
 sudo systemctl restart lazy.service
 ```
 
 ## 4.00 Create an account at private trackers
-Best create a account at a specialist indexer like audiobookbay.nl. Then add audiobookbay to Jackett. 
+Best create a account with a specialist book indexer like audiobookbay.nl. Then add audiobookbay to Jackett. 
 
 ---
 
