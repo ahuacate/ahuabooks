@@ -16,16 +16,17 @@ Other Prerequisites are:
 - [x] LazyLibrarian LXC with LazyLibrarian SW installed as per [LazyLibrarian LXC - Ubuntu 18.04](https://github.com/ahuacate/proxmox-lxc-media/blob/master/README.md#1100-lazylibrarian-lxc---ubuntu-1804).
 
 Tasks to be performed are:
-- [ ] 1.00 Setup LazyLibrarian settings
-- [ ] 1.01 Setup LazyLibrarian interface settings
-- [ ] 1.02 Setup LazyLibrarian importing settings
-- [ ] 1.03 Setup LazyLibrarian downloader settings
-- [ ] 1.04 Setup LazyLibrarian providers settings
-- [ ] 1.05 Setup LazyLibrarian processing settings
-- [ ] 1.06 Setup LazyLibrarian categories settings
-- [ ] 2.00 Create Lazylibrarian backup
-- [ ] 3.00 Restore Lazylibrarian backup
-- [ ] 00.00 Patches & Fixes
+- [1.00 Setup LazyLibrarian settings](#100-setup-lazylibrarian-settings)
+	- [1.01 Setup LazyLibrarian interface settings](#101-setup-lazylibrarian-interface-settings)
+	- [1.02 Setup LazyLibrarian importing settings](#102-setup-lazylibrarian-importing-settings)
+	- [1.03 Setup LazyLibrarian downloader settings](#103-setup-lazylibrarian-downloader-settings)
+	- [1.04 Setup LazyLibrarian providers settings](#104-setup-lazylibrarian-providers-settings)
+	- [1.05 Setup LazyLibrarian processing settings](#105-setup-lazylibrarian-processing-settings)
+	- [1.06 Setup LazyLibrarian categories settings](#106-setup-lazylibrarian-categories-settings)
+- [2.00 Create Lazylibrarian backup](#200-create-lazylibrarian-backup)
+- [3.00 Restore Lazylibrarian backup](#300-restore-lazylibrarian-backup)
+- [4.00 Create an account at private trackers](#400-create-an-account-at-private-trackers)
+- [00.00 Patches & Fixes](#0000-patches--fixes)
 
 ## 1.00 Setup LazyLibrarian settings
 In your web browser type `http://192.168.50.118:5289` and click `Config`.
