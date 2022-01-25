@@ -364,7 +364,7 @@ Nothing to do here.
 ---
 
 # Setup Booksonic
-In your web browser type `http://192.168.50.118:4040` and login. The installer's default username and password are `admin` and `admin`.
+In your web browser type `http://192.168.50.118:4040/booksonic` and login. The installer's default username and password are `admin` and `admin`.
 
 If you are going to access Booksonic remotely using HAProxy ( Recommended ) or Port Forwarding ( Not recommended ) then you should immediately change the default password. 
 
