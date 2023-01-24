@@ -13,11 +13,11 @@ The software suite includes:
 Network prerequisites are:
 - [x] Layer 2 Network Switches
 - [x] Network Gateway is `192.168.1.5`
-- [x] Network DNS server is `192.168.1.5` (Note: your Gateway hardware should enable you to configure DNS server(s), like a UniFi USG Gateway, so set the following: primary DNS `192.168.1.254` which will be your PiHole server IP address; and, secondary DNS `1.1.1.1` which is a backup Cloudflare DNS server in the event your PiHole server 192.168.1.254 fails or is down)
+- [x] Network DNS server is `192.168.1.5` (Note: your Gateway hardware should enable you to configure DNS server(s), like a UniFi USG Gateway, so set the following: primary DNS `192.168.1.6` which will be your PiHole server IP address; and, secondary DNS `1.1.1.1` which is a backup Cloudflare DNS server in the event your PiHole server 192.168.1.6 fails or is down)
 - [x] Network DHCP server is `192.168.1.5`
 
 Other Prerequisites are:
-- [x] Proxmox node as per [configuration](https://github.com/ahuacate/pve-host-setup) (Recommended).
+- [x] Proxmox node as per [configuration](https://github.com/ahuacate/pve-host) (Recommended).
 - [x] PVE Host Backend Storage mounted to your NAS
 	- nas-0X-audio
 	- nas-0X-backup
@@ -37,7 +37,7 @@ Our Easy Scripts assumes your network is VLAN ready. If not, decline the Easy Sc
 <h4>List of Easy Scripts</h4>
 <h7>Ahuabooks Installer</h7>
 ```
-bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/pve_medialab_ct_ahuabooks_installer.sh)"
+bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/main/pve_medialab_ct_ahuabooks_installer.sh)"
 ```
 
 <hr>
