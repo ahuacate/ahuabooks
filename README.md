@@ -4,7 +4,7 @@ Ahuabooks is a suite of software for managing your ebook, audiobook, podcast, an
 The software suite includes:
 *  Lazylibrarian
 *  Calibre
-*  Calibre-web (frontend for Calibre)
+*  Calibre-web ( frontend for Calibre )
 *  Booksonic
 *  Podgrab
 
